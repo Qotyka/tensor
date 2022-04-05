@@ -1,51 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73d86deb-74b9-4151-8ec4-8a9530ca9623" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../HW1_Task3/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW1_Task3/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW1_Task3/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW1_Task3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW1_Task3/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW1_Task3/HW1_Task3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW1_Task3/src/com/company/Rank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW1_Task3/src/com/company/Suit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW2/HW2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW3_Task2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW3_Task2/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW3_Task2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW3_Task2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW3_Task2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW3_Task2/HW3_Task2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW3_Task2/src/AbstractFileSystemNode.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW3_Task2/src/FileSystemNode.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HW3_Task2/src/Folder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW1_Task3/src/com/company/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HW1_Task3/src/com/company/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW1_Task3/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HW1_Task3/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7b28c319-4c18-46f5-b0f6-22cf8908f147" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="26pqoUy7eYnxykcsBPIQmZf3gnq" />
+  <component name="ProjectId" id="27Mx5RQfDz0bcvAKJg7K4Zb6qrU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -108,12 +73,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="Task5" />
+      <module name="untitled" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -121,23 +85,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="73d86deb-74b9-4151-8ec4-8a9530ca9623" name="Changes" comment="" />
-      <created>1648131052013</created>
+      <changelist id="7b28c319-4c18-46f5-b0f6-22cf8908f147" name="Changes" comment="" />
+      <created>1649143574814</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1648131052013</updated>
-      <workItem from="1648131053168" duration="5403000" />
-      <workItem from="1648210133555" duration="4109000" />
-      <workItem from="1649161670613" duration="623000" />
+      <updated>1649143574814</updated>
+      <workItem from="1649143576025" duration="673000" />
     </task>
     <servers />
   </component>
