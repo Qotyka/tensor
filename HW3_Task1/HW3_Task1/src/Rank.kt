@@ -1,13 +1,4 @@
-enum class Rank(rank: Int, name: String) {
-    TWO(2, "two"), THREE(3, "three"), FOUR(4, "four"), FIVE(5, "five"), SIX(6, "six"), SEVEN(7, "seven"), EIGHT(8, "eight"),
-    NINE(9, "nine"), TEN(10,"ten"), JACK(11, "jack"), QUIN(12,"quin"), KING(13,"king"), ACE(14, "ace"), JOKER(15, "joker");
-
-    private val rankValue: Int = rank;
-    private val rankName: String = name
-    fun getRank(): Int {
-        return rankValue
-    }
-    fun getRankName(): String {
-        return rankName
-    }
+enum class Rank(val rank: Int) {
+    TWO(2), THREE(3), FOUR(4), FIVE(5), SIX(6), SEVEN(7), EIGHT(8),
+    NINE(9), TEN(10), JACK(11), QUIN(12), KING(13), ACE(14), JOKER(15);
 }

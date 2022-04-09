@@ -1,9 +1,7 @@
-class Card(private val rank: Int, private val suit: String?) {
-
+class Card(private val rank: Rank, private val suit: Suit): Comparable<Card> {
     //реализация toString
     override fun toString(): String {
-        val rankName = Rank.values().associate { it.getRank() to it.getRankName() }[rank]
-        return "(${rankName ?: rank}, $suit)" //если rankName равен null, возвращает число указанного ранга
+        return "(${rank.name}, ${suit.name})"
     }
 
     //реализация equals
@@ -12,20 +10,21 @@ class Card(private val rank: Int, private val suit: String?) {
         return if (other !is Card) {
             false
         } else {
-            (rank == other.rank) && suit.equals(other.suit)
+            (rank.name == other.rank.name) && (suit.name == other.suit.name)
         }
     }
 
-    //hashCode зависит от ранга и первой буквы названия масти
+    //hashCode зависит от ранга карты и силы масти
     override fun hashCode(): Int {
-        return rank + 10 * suit.hashCode()
+        return rank.rank + 10 * suit.suitValue
     }
 
     //есть ли карта в стандартной французской 54-карточной колоде
     //Joker только в clubs и diamonds
     fun isInStandartDeck(): Boolean {
-        return (rank >= Rank.TWO.getRank() && rank <= Rank.ACE.getRank()
-                || rank > Rank.ACE.getRank() && (Suit.DIAMONDS.getSuitName() == suit || Suit.SPADES.getSuitName() == suit))
+        return (rank.rank >= Rank.TWO.rank && rank.rank <= Rank.ACE.rank)
+                || (rank.rank > Rank.ACE.rank &&
+                (Suit.DIAMONDS.suitValue == suit.suitValue || Suit.SPADES.suitValue == suit.suitValue))
     }
 
     //сильнее ли текущая карта переданной
@@ -39,14 +38,14 @@ class Card(private val rank: Int, private val suit: String?) {
     }
 
     //сравнение текущей карты с переданной
-    operator fun compareTo(other: Card): Int {
+    override operator fun compareTo(other: Card): Int {
         // 0 - карты равны, < 0 - текущая карта меньше, > 0 текущая карта больше
         // Любая карта сильной масти сильнее любой карты слабой масти
-        val mapOfSuitToValue = Suit.values().associate { it.getSuitName() to it.getSuitValue() }
-        return if (mapOfSuitToValue.getValue(suit.toString()) - mapOfSuitToValue.getValue(other.suit.toString()) > 0) {
+
+        return if (this.suit.suitValue - other.suit.suitValue > 0) {
             1
-        } else if (mapOfSuitToValue.getValue(suit.toString()) - mapOfSuitToValue.getValue(other.suit.toString()) == 0) {
-            rank - other.rank
+        } else if (this.suit.suitValue - other.suit.suitValue == 0) {
+            rank.rank - other.rank.rank
         } else {
             -1
         }
@@ -55,11 +54,11 @@ class Card(private val rank: Int, private val suit: String?) {
     fun compareTo(card1: Card, card2: Card): Int {
         // 0 - карты равны, < 0 - первая карта меньше, > 0 первая карта больше
         // Любая карта сильной масти сильнее карты слабой масти
-        val mapOfSuitToValue = Suit.values().associate { it.getSuitName() to it.getSuitValue() }
-        return if (mapOfSuitToValue.getValue(card1.suit.toString()) - mapOfSuitToValue.getValue(card2.suit.toString()) > 0) {
+
+        return if (card1.suit.suitValue - card2.suit.suitValue > 0) {
             1
-        } else if (mapOfSuitToValue.getValue(card1.suit.toString()) - mapOfSuitToValue.getValue(card2.suit.toString()) == 0) {
-            card1.rank - card2.rank
+        } else if (card1.suit.suitValue - card2.suit.suitValue == 0) {
+            card1.rank.rank - card2.rank.rank
         } else {
             -1
         }
@@ -67,10 +66,10 @@ class Card(private val rank: Int, private val suit: String?) {
 
     //методы чтения значений rank и suit
     fun getRank(): Int {
-        return rank
+        return rank.rank
     }
 
-    fun getSuit(): String? {
-        return suit
+    fun getSuit(): String {
+        return suit.name
     }
 }

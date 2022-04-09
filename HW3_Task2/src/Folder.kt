@@ -1,5 +1,6 @@
 class Folder(vararg fileSystemNodes: FileSystemNode) : AbstractFileSystemNode() {
-    var children = ArrayList<FileSystemNode>()
+    private var children = ArrayList<FileSystemNode>()
+
     init {
         for (fileSystemNode in fileSystemNodes) {
             children.add(fileSystemNode)

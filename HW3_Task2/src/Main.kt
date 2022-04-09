@@ -1,26 +1,19 @@
 fun main(args: Array<String>) {
     //несколько файлов
-    val file1Folder1 = File()
+    val file1Folder1 = File("exe")
     file1Folder1.name = "file1_folder1"
-    file1Folder1.extension = "exe"
-    val file2Folder1 = File()
+    val file2Folder1 = File("txt")
     file2Folder1.name = "file2_folder1"
-    file2Folder1.extension = "txt"
-    val file3Folder1 = File()
+    val file3Folder1 = File("bpm")
     file3Folder1.name = "file3_folder1"
-    file3Folder1.extension = "bpm"
-    val file1_folder2 = File()
+    val file1_folder2 = File("doc")
     file1_folder2.name = "file1_folder2"
-    file1_folder2.extension = "doc"
-    val file2Folder2 = File()
+    val file2Folder2 = File("dll")
     file2Folder2.name = "file2_folder2"
-    file2Folder2.extension = "dll"
-    val file3Folder2 = File()
+    val file3Folder2 = File("exe")
     file3Folder2.name = "file3_folder2"
-    file3Folder2.extension = "exe"
-    val file4Folder2 = File()
+    val file4Folder2 = File("exe")
     file4Folder2.name = "file4_folder2"
-    file4Folder2.extension = "exe"
     //папки с файлами
     val folder1 = Folder(file1Folder1, file2Folder1, file3Folder1)
     folder1.name = "folder1"
